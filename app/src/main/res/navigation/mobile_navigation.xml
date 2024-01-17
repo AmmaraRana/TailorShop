@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <activity
+        android:id="@+id/nav_setting"
+        android:name="com.example.adminpanel.ui.setting.Setting"
+        android:label="activity_setting"
+        tools:layout="@layout/activity_setting" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.adminpanel.Customer.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.adminpanel.ui.gallery.GalleryFragment"
+        android:label="Order's Detail"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="com.example.adminpanel.Fragments.AllFragment"
+        android:label="fragment_all"
+        tools:layout="@layout/fragment_all" />
+
+
+</navigation>

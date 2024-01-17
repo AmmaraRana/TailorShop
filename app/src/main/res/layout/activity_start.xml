@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ecommerece"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="50dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tailor"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn"
+            android:padding="14dp"
+            android:text="Buy Prodect"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+
+            tools:ignore="VisualLintButtonSize" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tailor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/round_btn"
+            android:padding="14dp"
+            android:text="Tailor Section"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <LinearLayout
+            android:id="@+id/appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="70dp"
+
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:fontFamily="cursive"
+                android:text="Tailor App"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

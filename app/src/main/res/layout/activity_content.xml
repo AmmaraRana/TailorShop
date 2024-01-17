@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@drawable/ecommerece"
+    tools:context=".Tailor.ContentActivity">
+
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color1">
+
+        <ImageView
+
+            android:id="@+id/shop"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shop" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/shop"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Shop View"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/welcom_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rll"
+        android:layout_margin="10dp"
+        android:elevation="4dp"
+        android:radius="8dp"
+        app:cardBackgroundColor="@color/lightskyformal"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/checkorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/round_btn"
+                android:text="New Oreders" />
+
+            <TextView
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="John Doe"
+                android:textColor="@color/color1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameText"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="User Number: +1234567890"
+                android:textColor="@color/color1"
+                android:textSize="14sp" />
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/searchBar"
+                style="@style/MaterialSearchBarLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userNumberText"
+                app:mt_hint="Ask Me Anything "
+                app:mt_hintColor="@color/black"
+                app:mt_maxSuggestionsCount="10"
+                app:mt_placeholder="Search Here.."
+                app:mt_roundedSearchBarEnabled="false"
+                app:mt_speechMode="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seller_home_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="543dp"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@id/welcom_card"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightsky"
+        android:elevation="8dp"
+        app:itemIconTint="@color/color1"
+        app:itemTextColor="@color/color1"
+
+
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

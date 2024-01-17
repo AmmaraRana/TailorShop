@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.BillPaymentActivity">
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:contentDescription="Back"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Billing Activity"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+<ScrollView
+    android:layout_below="@id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <!-- Account ID TextView -->
+    <TextView
+        android:id="@+id/accountIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Account ID" />
+
+    <!-- Account Number TextView -->
+    <TextView
+        android:id="@+id/accountNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountIdTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Account Number" />
+
+    <!-- Amount TextView -->
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountNumberTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Amount" />
+
+    <!-- Image Upload Label TextView -->
+    <TextView
+        android:id="@+id/uploadLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Upload Payment Proof" />
+
+    <!-- ImageView for Uploading Payment Proof -->
+    <ImageView
+        android:id="@+id/uploadImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadLabelTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gra" />
+
+    <!-- Send Payment Proof Button -->
+    <Button
+        android:id="@+id/sendPaymentProofButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Send Payment Proof" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

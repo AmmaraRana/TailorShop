@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.again">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/product_image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_image_detail">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    >
+                    <!-- Product Name -->
+                    <TextView
+                        android:id="@+id/product_name_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/fabric_Price_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop_contact"
+                    android:orientation="horizontal"
+
+                    >
+                    <!-- Product shop -->
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="16dp"
+                        android:text="Price:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Product contact -->
+
+                    <TextView
+                        android:id="@+id/product_price_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/product_name_detail"
+                        android:padding="8dp"
+                        android:text="Price"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    >
+                    <!-- Product shop -->
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="16dp"
+                        android:text="Category:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Product contact -->
+                    <TextView
+                        android:id="@+id/product_Category_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/product_name_detail"
+                        android:padding="8dp"
+                        android:text="Category"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    >
+                    <!-- Product shop -->
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="16dp"
+                        android:text="Fabric:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Product contact -->
+                    <TextView
+                        android:id="@+id/product_fabric_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/product_name_detail"
+                        android:padding="8dp"
+                        android:text="fabric"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    >
+                    <!-- Product shop -->
+                    <TextView
+                        android:id="@+id/product_shop_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="16dp"
+                        android:text="Shop"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Product contact -->
+                    <TextView
+                        android:id="@+id/product_contact_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/product_name_detail"
+                        android:padding="8dp"
+                        android:text="Contact"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+                <!-- Product Description -->
+                <TextView
+                    android:id="@+id/product_description_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fabric_Price_detail"
+                    android:padding="16dp"
+
+                    android:text="Absolutely! Feel free to provide the code you're working on, and I'll do my best to help you identify any potential mistakes or issues. Please share the relevant parts of the code where you suspect
+                there might be a problem," />
+
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/product_description_detail"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_bg"
+                    android:backgroundTint="@color/color1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnDecrement"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:backgroundTint="@color/orangges"
+                        android:padding="0dp"
+                        android:text="—"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+
+                        android:id="@+id/tvCounter"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnIncrement"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+
+                        android:backgroundTint="@color/orangges"
+                        android:padding="0dp"
+                        android:text="+"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/add_To_CartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/nav_cart"
+            android:drawableTint="@color/white"
+            android:text="Add to cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            app:layout_constraintTop_toBottomOf="@id/cardview"
+
+            app:layout_constraintWidth_percent=".8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Back Button and Title -->
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/back">
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/backimage"
+            android:text="Category Section"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_below="@id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        android:padding="8dp">
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+
+            android:id="@+id/searchBar"
+            style="@style/MaterialSearchBarLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mt_borderlessRippleEnabled="true"
+            app:mt_hint="Search Here"
+            app:mt_maxSuggestionsCount="10"
+            app:mt_menuDividerEnabled="true"
+
+            app:mt_placeholder="Search Categories.."
+            app:mt_speechMode="false" />
+    </RelativeLayout>
+    <!-- SearchView in Toolbar -->
+
+
+    <!-- Shop By Category CardView -->
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="16dp"
+        android:id="@+id/categoryCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_margin="8dp"
+        android:padding="16dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/shopByCategoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse By Category"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/seeAllTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="See All"
+                android:textColor="@color/color1"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <!-- RecyclerView for Categories -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categoryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shopByCategoryTextView"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:paddingTop="8dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- RecyclerView for Products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryCardView"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp" />
+
+</RelativeLayout>

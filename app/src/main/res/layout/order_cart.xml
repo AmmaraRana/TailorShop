@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Product Name and Label in Horizontal LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Product Name Label -->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Product Name:"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@android:color/darker_gray"-->
+<!--                android:id="@+id/labelProductName"/>-->
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/textProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+               />
+        </LinearLayout>
+
+        <!-- Product ID and Label in Horizontal LinearLayout -->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="8dp">-->
+
+<!--            &lt;!&ndash; Product ID Label &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Product ID:"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@android:color/darker_gray"-->
+<!--                android:id="@+id/labelProductID"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                />-->
+
+<!--            &lt;!&ndash; Product ID &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/textProductID"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="ABC123"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@android:color/darker_gray"-->
+<!--                android:layout_marginStart="8dp"/>-->
+<!--        </LinearLayout>-->
+
+        <!-- Quantity and Label in Horizontal LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Quantity Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/labelQuantity"
+                android:layout_marginStart="8dp"
+                />
+
+            <!-- Quantity -->
+            <TextView
+                android:id="@+id/textQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Price and Label in Horizontal LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Price Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/labelPrice"
+                android:layout_marginStart="8dp"
+                />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$20.00"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Price Label -->
+            <TextView
+                android:id="@+id/textCustomerrequrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Requirement:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+         />
+
+            <!-- Price -->
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textrequirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$20.00"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+
+    android:orientation="vertical"
+
+    tools:context=".activites.Letsdoit">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/imageBackButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+
+            android:layout_marginStart="8dp"
+            android:src="@drawable/baseline_clear_24" />
+
+        <TextView
+            android:id="@+id/textToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Select Fabric"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/ToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the fabrics:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Fabric Options -->
+            <CheckBox
+                android:id="@+id/checkBoxCotton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cotton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSilk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silk" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxWool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wool" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxChiffon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chiffon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxKhaddar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khaddar" />
+            <!-- Add more checkboxes for other fabric options -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <!-- Fabric Options -->
+
+            <CheckBox
+                android:id="@+id/checkBoxLawn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lawn" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLinen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linen" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxViscose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viscose" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxOrganza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organza" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVelvet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Velvet" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+            <Button
+                android:id="@+id/proced_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/edittext_bg"
+                android:gravity="bottom"
+                android:text="Confirm"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

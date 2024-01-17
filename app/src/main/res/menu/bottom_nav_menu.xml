@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/navigation_ShopView"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_addition"
+        android:icon="@drawable/baseline_library_add_24"
+        android:title=""
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="" />
+
+</menu>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:background="@color/white"
+
+    tools:context=".ConfirmFinalOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <!-- Buy Now TextView -->
+        <TextView
+            android:id="@+id/buyNowTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/accent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Buy Now"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <!-- Two TextViews in Horizontal Arrangement -->
+        <LinearLayout
+            android:id="@+id/productDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buyNowTextView"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/productNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RS :"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/productPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Product Price"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <!-- Two TextViews in Horizontal Arrangement -->
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productDetailsLayout"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/productquantityTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quantity"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <!-- Line View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/l3"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l3"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a picture that captures the frontal view and includes the entire body."
+                android:textColor="@color/accent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/input_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/accent"
+                android:text="Input Size" />
+
+            <TextView
+                android:id="@+id/edit_fun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Edit if you want.."
+                android:textSize="18sp"
+                android:visibility="gone" />
+            <!-- New layout with four EditTexts -->
+            <LinearLayout
+                android:id="@+id/visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+
+                <!-- First EditText with description -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Arm Length:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Enter Arm Length"
+                        android:maxEms="4"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Second EditText with description -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Leg Length:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Enter Leg Length"
+                        android:maxEms="4"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Third EditText with description -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Neck Circumference:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Enter Neck Circumference"
+                        android:maxEms="4"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Fourth EditText with description -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Shoulder Width:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Enter Shoulder Width"
+                        android:maxEms="4"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/l2"
+
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Shipment Details"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="16dp"
+            android:text="Enter Receiver Information"
+            android:textSize="22sp" />
+
+        <!-- Receiver Name -->
+        <LinearLayout
+            android:id="@+id/reciever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/textViewReceiverNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver Name:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/shipment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter receiver name"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textSize="22sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+        <!-- Address -->
+        <LinearLayout
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reciever"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/textViewAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/shipment_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter address"
+                android:inputType="textPostalAddress"
+                android:padding="8dp"
+                android:textSize="22sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+        <!-- City -->
+        <LinearLayout
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/textViewCityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/shipment_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter city"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="22sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+        <!-- State and Postal Code -->
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- State -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/stateEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="State"
+                    android:padding="8dp"
+                    android:textSize="22sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <!-- Postal Code -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Code:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/postalCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Postal Code"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textSize="22sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/customRequirementTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Custom Requirement"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/custome_requirement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customRequirementTitle"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter your custom requirement"
+            android:padding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="textStart"
+            android:textSize="22sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/confirm_final_order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custome_requirement"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_bg"
+            android:text="Send Order  Request" />
+
+
+    </RelativeLayout>
+</ScrollView>

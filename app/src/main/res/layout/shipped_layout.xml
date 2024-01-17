@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/textProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Product"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Product Delivery Minimum -->
+        <TextView
+            android:id="@+id/textDeliveryMinimum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textProductName"
+            android:layout_marginTop="8dp"
+            android:text="Delivery Minimum: 2 days"
+            android:textSize="16sp" />
+
+        <!-- Amount to be Paid -->
+        <TextView
+            android:id="@+id/textAmountToPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDeliveryMinimum"
+            android:layout_marginTop="8dp"
+            android:text="Amount to Pay: $50"
+            android:textSize="16sp" />
+
+        <!-- "Tap to Pay" Text -->
+        <TextView
+            android:id="@+id/textTapToPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDeliveryMinimum"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="Tap to Pay"
+            android:padding="6dp"
+            android:textColor="@color/color1"
+            android:drawableTint="@color/color1"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <!-- Add other TextViews or UI elements as needed -->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

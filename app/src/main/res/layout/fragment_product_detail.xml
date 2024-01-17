@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Customer.home.ProductDetailFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Product Image -->
+        <ImageView
+
+            android:id="@+id/product_image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/product_name_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_image_detail"
+            android:padding="16dp"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Product Category -->
+        <TextView
+            android:id="@+id/product_Category_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name_detail"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:text="Category"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/shop_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_Category_detail"
+            android:orientation="horizontal"
+
+            >
+            <!-- Product shop -->
+            <TextView
+                android:id="@+id/product_shop_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_image_detail"
+                android:padding="16dp"
+                android:text="Shop Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Product contact -->
+            <TextView
+                android:id="@+id/product_contact_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_name_detail"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="Contact"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/fabric_Price_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shop_contact"
+            android:orientation="horizontal"
+
+            >
+            <!-- Product shop -->
+            <TextView
+                android:id="@+id/product_fabric_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_image_detail"
+                android:padding="16dp"
+                android:text="Fabric"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Product contact -->
+            <TextView
+                android:id="@+id/product_price_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_name_detail"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="Price"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/product_description_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fabric_Price_detail"
+            android:padding="16dp"
+
+            android:text="Description" />
+
+
+        <!--     Add to Cart Button -->
+        <!--        <Button-->
+        <!--            android:id="@+id/addToCartButton"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:layout_marginLeft="-105dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:layout_marginEnd="16dp"-->
+
+        <!--           android:layout_below="@id/product_description_detail"-->
+        <!--            android:text="Add to cart" />-->
+    </RelativeLayout>
+
+
+</ScrollView>

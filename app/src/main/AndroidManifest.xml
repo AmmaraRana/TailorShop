@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/tailorshop"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/tailorshop"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdminPanel"
+        tools:targetApi="31">
+        <activity
+            android:name=".activites.todo.ShippedOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.todo.AllOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.todo.CategoryItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.todo.CategoryExplorerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.todo.AllOrderActivvity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.todo.FeedBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShopViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.ShippmentOrder"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.CheckOrderDetail"
+            android:exported="false" />
+        <activity
+            android:name=".input_sizeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.todo.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.BillPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activites.CustomCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.Letsdoit"
+            android:exported="false" />
+        <activity
+            android:name=".orders.UserPendingOrders"
+            android:exported="false" />
+        <activity
+            android:name=".UserOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.ImageSelectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.SellerProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.SellerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.AddMultipleImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.SellerCheckOrderActivty"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.ContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.CheckNewProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.DashboardActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.SellerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.SellerRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.AdminMaintainProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUserProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNewOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmFinalOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.again"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".trial.admin"
+            android:exported="false" />
+        <activity
+            android:name=".activites.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.home.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.setting.Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.AdminCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tailor.SellerAddNewProduct"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.nav_bar"
+            android:exported="false"
+            android:label="@string/title_activity_nav_bar"
+            android:theme="@style/Theme.AdminPanel.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".NotifcationPakage.FCMNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBF0F1"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="16dp"
+        android:padding="16dp">
+
+        <!-- Pending Orders CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="32dp"
+            android:padding="16dp"
+            app:cardCornerRadius="@dimen/fab_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+
+                <!-- Icon -->
+
+                <!-- Information Text -->
+
+                <TextView
+                    android:id="@+id/pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Pending Orders"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/pending"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/order" />
+
+                <TextView
+                    android:id="@+id/sum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pending"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Click here to see detail of your pending"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sum1"
+                    android:layout_marginStart="16dp"
+                    android:text="Oreders..." />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Shipped Orders CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewShipped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardViewPending"
+            android:layout_marginBottom="16dp"
+            android:elevation="32dp"
+            android:padding="16dp"
+            app:cardCornerRadius="@dimen/fab_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+
+                <!-- Icon -->
+
+                <!-- Information Text -->
+
+                <TextView
+                    android:id="@+id/shipped"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Approved Orders"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/shipped"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/order" />
+
+                <TextView
+                    android:id="@+id/sum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shipped"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Click here to see detail of your Shipped"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sum2"
+                    android:layout_marginStart="16dp"
+                    android:text="Oreders..." />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Similar structure as the Pending Orders CardView, adjust as needed -->
+
+        <!--         Confirmed Orders CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardViewShipped"
+            android:layout_marginBottom="16dp"
+            android:elevation="32dp"
+            android:padding="16dp"
+            app:cardCornerRadius="@dimen/fab_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+
+                <!-- Icon -->
+
+                <!-- Information Text -->
+
+                <TextView
+                    android:id="@+id/complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Shipped Orders"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/complete"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/order" />
+
+                <TextView
+                    android:id="@+id/sum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/complete"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Click here to see detail of your Complete"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sum3"
+                    android:layout_marginStart="16dp"
+                    android:text="Oreders..." />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Similar structure as the Pending Orders CardView, adjust as needed -->
+    </RelativeLayout>
+
+
+</RelativeLayout>

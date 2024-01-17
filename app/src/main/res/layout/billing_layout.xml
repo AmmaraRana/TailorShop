@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FDFDFD"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/labelProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelProductName"
+                android:layout_marginTop="4dp"
+                android:text="Sample Product"
+                android:textSize="18sp" />
+
+            <!-- Delivered Within -->
+            <TextView
+                android:id="@+id/labelDeliveredWithin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textProductName"
+                android:layout_marginTop="8dp"
+                android:text="Delivered Within:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDeliveredWithin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelDeliveredWithin"
+                android:layout_marginTop="4dp"
+                android:text="2 days"
+                android:textSize="18sp" />
+
+            <!-- Billing Amount -->
+            <TextView
+                android:id="@+id/labelBillingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDeliveredWithin"
+                android:layout_marginTop="8dp"
+                android:text="Billing Amount:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textBillingAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelBillingAmount"
+                android:layout_marginTop="4dp"
+                android:text="$50"
+                android:textSize="18sp" />
+
+            <!-- Shipment Address -->
+            <TextView
+                android:id="@+id/labelShipmentAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textBillingAmount"
+                android:layout_marginTop="8dp"
+                android:text="Shipment Address:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textShipmentAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelShipmentAddress"
+                android:layout_marginTop="4dp"
+                android:text="123 Main St, City"
+                android:textSize="18sp" />
+
+            <!-- Status -->
+            <TextView
+                android:id="@+id/labelStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textShipmentAddress"
+                android:layout_marginTop="8dp"
+                android:text="Status:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelStatus"
+                android:layout_marginTop="4dp"
+                android:text="Shipped"
+                android:textSize="18sp" />
+
+            <!-- Contact Info -->
+            <TextView
+                android:id="@+id/labelContactInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textStatus"
+                android:layout_marginTop="8dp"
+                android:text="Contact Info:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textContactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelContactInfo"
+                android:layout_marginTop="4dp"
+                android:text="contact@example.com"
+                android:textSize="18sp" />
+
+            <!-- Pay Now Button -->
+            <Button
+                android:id="@+id/btnPayNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textContactInfo"
+                android:layout_marginTop="16dp"
+                android:background="#3498db"
+                android:text="Pay Now"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

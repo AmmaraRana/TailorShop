@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    android:background="@color/back"
+    android:padding="16dp">
+
+<!--    &lt;!&ndash; Buyer ID &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardorder"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/labelBuyerId"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Order Sumary"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    &lt;!&ndash; Product Name &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/labelProductName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/cardorder"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Product Name:"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/et_ProductName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/labelProductName"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_toEndOf="@id/labelProductName"-->
+<!--        android:text="Product Name" />-->
+
+<!--    &lt;!&ndash; Buyer Name &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/labelBuyerName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/et_ProductName"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Buyer Name:"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/et_BuyerName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/labelBuyerName"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_toEndOf="@id/labelBuyerName"-->
+<!--        android:text="Buyer Name" />-->
+
+<!--    &lt;!&ndash; Contact Shop Name &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/labelShopName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/et_BuyerName"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Contact Shop Name:"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textShopName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/labelShopName"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_toEndOf="@id/labelShopName"-->
+<!--        android:text="Shop Name" />-->
+
+<!--    &lt;!&ndash; Amount &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/labelAmount"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textShopName"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Amount:"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/et_Amount"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/labelAmount"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_toEndOf="@id/labelAmount"-->
+<!--        android:text="Amount" />-->
+
+<!--    &lt;!&ndash; Address &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/labelAddress"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/et_Amount"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Address:"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/et_adress"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/labelAddress"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_toEndOf="@id/labelAddress"-->
+<!--        android:text="Address" />-->
+
+    <!-- Delivery Date -->
+    <TextView
+        android:id="@+id/labelDeliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:text="Earliest Delivery:"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelDeliveryDate"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/labelDeliveryDate"
+            android:capitalize="characters"
+            android:inputType="date"
+            android:text="within"
+            android:textAllCaps="true"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_DeliveryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@id/labelDeliveryDate"
+            android:hint="9,nov,2023"
+            android:inputType="date"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/labelDeliveryDate"
+            android:text="days"
+
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+<!--    &lt;!&ndash; Thanks for Shopping &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/textThanks"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/linear"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Thanks for shopping here!"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="italic" />-->
+
+</RelativeLayout>

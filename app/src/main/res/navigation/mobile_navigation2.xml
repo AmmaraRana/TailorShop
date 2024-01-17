@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_ShopView">
+
+
+
+
+    <activity
+        android:id="@+id/navigation_ShopView"
+        android:name="com.example.adminpanel.Tailor.ContentActivity"
+        android:label="activity_content"
+        tools:layout="@layout/activity_content" />
+
+    <activity
+        android:id="@+id/navigation_addition"
+        android:name="com.example.adminpanel.Tailor.AdminCategoryActivity"
+        android:label="activity_admin_category"
+        tools:layout="@layout/activity_admin_category" />
+
+    <activity
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.adminpanel.Tailor.DashboardActivity2"
+        android:label="activity_dashboard2"
+        tools:layout="@layout/activity_dashboard2" />
+</navigation>
